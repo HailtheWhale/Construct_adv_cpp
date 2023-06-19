@@ -18,8 +18,8 @@ Meaning, that you'd need their Web Environment to easily reuse what is here.
 
 ## What was taught
 1. The compilation stack for compiled languages. Basic build system processes. Clang was used in this course (more info here[https://clang.llvm.org/docs/CommandGuide/clang.html])
-2. C++ data structures (Arrays, Vectors, mutisets, iterators, etc.)
-3. ...
+2. C++ data structures (arrays, vectors, mutisets, iterators, etc.)
+3. What structures are. How to make better C++ classes (access specifiers, constructors, destructors, the `this` pointer, static variables and functions).
 
 ## Exercise Requirements and Modifications 
 - Exercise 1.1 
@@ -43,5 +43,20 @@ Meaning, that you'd need their Web Environment to easily reuse what is here.
 - Exercise 2.6
     - Requirements: Do Exercise 2.5 again but with a map. 
     - Changes: Same as Exercise 2.5. 
+
+*Note: From Unit 3 onwards, no changes were made to exercise requirements since they already involved classes and pointers.*
+
+*Note: For Unit 3: Associated files: robot_manager_node.cpp, robot_manager.cpp, robot_manager.h*
+
+- Exercise 3.1
+    - Requirements: Make a ROS package. Make a class, but separate things into a header, main, and node file. Initialize values in the header. 
+- Exercise 3.2
+    - Requirements: Add nav_msgs as a dependency to the previously made package. Declare all variables as private. Add a constructor that takes a pointer and 3 strings as args. Add a ros::subscriber variable. Keep the node running with ros::spin().
+- Exercise 3.3 
+    - Requirements: Add a static variable. Increase it whenever an object is made. Add another instance of class. 
+- Exercise 3.4
+    - Requirements: Add const references to code. 
+- Exercise 3.5
+    - Requirements: Add 2 private params for x and y positions. Assign values to these from the odom callback. Add a service call that logs the current robot coordinates. 
 
 ## Demonstrations
