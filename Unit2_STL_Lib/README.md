@@ -4,3 +4,5 @@
 - Requires to clone: https://bitbucket.org/theconstructcore/modern_cpp_course.git. To get the RobotCommander object for the exercises. 
 ## Exercises 
 - All exercises were grouped into one object for accessibility.
+## STL lib 
+- Has sample code provided by theConstruct for learning. Included is a PDF to show what terminal outputs should be.
