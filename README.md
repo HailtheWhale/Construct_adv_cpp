@@ -20,6 +20,7 @@ Meaning, that you'd need their Web Environment to easily reuse what is here.
 1. The compilation stack for compiled languages. Basic build system processes. Clang was used in this course (more info here[https://clang.llvm.org/docs/CommandGuide/clang.html])
 2. C++ data structures (arrays, vectors, mutisets, iterators, etc.)
 3. What structures are. How to make better C++ classes (access specifiers, constructors, destructors, the `this` pointer, static variables and functions).
+4. Object Oriented Programming concepts (Composition, inheritance, virtual functions, function overload, polymorphism). Introduction to interfaces and type casting.
 
 ## Exercise Requirements and Modifications 
 - Exercise 1.1 
@@ -58,5 +59,18 @@ Meaning, that you'd need their Web Environment to easily reuse what is here.
     - Requirements: Add const references to code. 
 - Exercise 3.5
     - Requirements: Add 2 private params for x and y positions. Assign values to these from the odom callback. Add a service call that logs the current robot coordinates. 
+- Exercise 4.1
+    - Requirements: Make 3 files, a header, main, and node. Make a class, `robot_manager_composition`, with a boolean called `output_enabled`. Make a boolean service which updates `output_enabled` if appropriate when called. In the constructor, save a premade `ComputerUnit` class. Call the `ComputerUnit` class' print method when `output_enabled` is true. 
+    - Associated files: In the `robot_manager_composition` pkg.
+- Exercise 4.2
+    - Requirements: Provided with various levels of inheritance, answer some questions. In `~unit4exercises/exercise_4_2`.
+- Exercise 4.3
+    - Requirements: Redo Exercise 4.1, but in a different package, `robot_manager_inheritance`, minus the `ComputerUnit` functions. The new files have the base name `base_robot_manager`. Make a new set of header, main, and node files with the base name `mobile_mobile_robot_manager`. Make a new class which inherits from the remade class and reuses its service. Add an odometry subscriber which prints the location of the given topic when output is enabled. 
+    - Associated Files: In `robot_manager_inheritance` package.
+- Exercise 4.4 
+    - Requirements: Build off Exercise 4.3. Add a virtual method to the base class which prints strings. In the child class, override the function to print extra contents. 
+    - Associated Files: In `robot_manager_inheritance` package.
+- Exercise 4.5 
+    - Requirements: Build off Exercise 4.4. Make the parent class' virtual function a pure virtual function.
 
 ## Demonstrations
